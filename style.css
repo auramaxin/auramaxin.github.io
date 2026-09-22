@@ -259,6 +259,78 @@ nav {
     margin-top: 0.9rem;
 }
 
+
+.projects-section {
+    padding: 7rem 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.project-card {
+    position: relative;
+    padding: 1.7rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #3f3f46;
+    background: var(--surface-hover);
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.project-number {
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.project-type {
+    color: var(--subtle);
+    font-size: 0.72rem;
+}
+
+.project-card h3 {
+    font-size: 1.15rem;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.7rem;
+}
+
+.project-card > p {
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.7;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1.35rem;
+}
+
+.project-tech span {
+    padding: 0.3rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--subtle);
+    font-size: 0.68rem;
+}
+
 .contact-section {
     padding: 7rem 0;
     border-top: 1px solid var(--line);
@@ -343,6 +415,12 @@ footer {
         min-width: 0;
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
