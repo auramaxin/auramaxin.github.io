@@ -469,6 +469,20 @@ nav {
     font-size: 0.68rem;
 }
 
+
+.project-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--accent);
+    font-size: 0.78rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.project-link:hover {
+    border-color: var(--accent);
+}
+
 .contact-section {
     padding: 7rem 0;
     border-top: 1px solid var(--line);
